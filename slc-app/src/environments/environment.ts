@@ -1,9 +1,30 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
+// Import the functions you need from the SDKs you need
+import { initializeApp } from 'firebase/app';
+import { getAnalytics } from 'firebase/analytics';
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const slcConfig = {
+  apiKey: 'AIzaSyDG9IqrrIODD8PQ8ozuTI540JKZl4bbtqY',
+  authDomain: 'shakespearelc-154de.firebaseapp.com',
+  projectId: 'shakespearelc-154de',
+  storageBucket: 'shakespearelc-154de.appspot.com',
+  messagingSenderId: '1020287234925',
+  appId: '1:1020287234925:web:d82a3d070c9eb209876064',
+  measurementId: 'G-0H040NETBG',
+};
+
+// Initialize Firebase
+const app = initializeApp(slcConfig);
+const analytics = getAnalytics(app);
 
 export const environment = {
-  production: false
+  production: false,
 };
 
 /*
