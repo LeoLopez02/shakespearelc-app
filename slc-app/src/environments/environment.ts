@@ -9,23 +9,25 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const slcConfig = {
-  apiKey: 'AIzaSyDG9IqrrIODD8PQ8ozuTI540JKZl4bbtqY',
-  authDomain: 'shakespearelc-154de.firebaseapp.com',
-  projectId: 'shakespearelc-154de',
-  storageBucket: 'shakespearelc-154de.appspot.com',
-  messagingSenderId: '1020287234925',
-  appId: '1:1020287234925:web:d82a3d070c9eb209876064',
-  measurementId: 'G-0H040NETBG',
-};
 
 // Initialize Firebase
-const app = initializeApp(slcConfig);
-const analytics = getAnalytics(app);
 
 export const environment = {
   production: false,
+  slcConfig: {
+    apiKey: 'AIzaSyDG9IqrrIODD8PQ8ozuTI540JKZl4bbtqY',
+    authDomain: 'shakespearelc-154de.firebaseapp.com',
+    projectId: 'shakespearelc-154de',
+    storageBucket: 'shakespearelc-154de.appspot.com',
+    messagingSenderId: '1020287234925',
+    appId: '1:1020287234925:web:d82a3d070c9eb209876064',
+    measurementId: 'G-0H040NETBG',
+    production: false,
+  },
 };
+
+const app = initializeApp(environment.slcConfig);
+const analytics = getAnalytics(app);
 
 /*
  * For easier debugging in development mode, you can import the following file
