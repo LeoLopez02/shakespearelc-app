@@ -12,6 +12,9 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { TeamComponent } from './components/team/team.component';
+import { AboutusComponent } from './components/aboutus/aboutus.component';
+import { AdsComponent } from './components/ads/ads.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,11 @@ import { PricingComponent } from './components/pricing/pricing.component';
   ],
   imports: [
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: '', component: AdsComponent, pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
+      { path: 'team', component: TeamComponent },
       { path: 'pricing', component: PricingComponent },
+      { path: 'about-us', component: AboutusComponent },
     ]),
     FormsModule,
     BrowserModule,
