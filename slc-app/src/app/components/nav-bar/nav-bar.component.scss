@@ -1,0 +1,51 @@
+::ng-deep {
+  nav {
+    background-color: hsla(135, 100%, 21%, 1);
+    padding: 0;
+    // background-image: radial-gradient(
+    //     at 0% 0%,
+    //     hsla(343, 100%, 76%, 1) 0px,
+    //     transparent 50%
+    //   ),
+    //   radial-gradient(at 0% 100%, hsla(22, 100%, 77%, 1) 0px, transparent 50%);
+    // // background-color: #198754;
+    .logo {
+      color: #fff;
+      text-decoration: none;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode";
+      font-weight: 600;
+      line-height: 14px;
+      margin-right: 3rem;
+
+      .logo-middle {
+        margin-left: 00.35rem;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    .a-item {
+      text-decoration: none;
+      color: #fff;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 0 1rem 0;
+      font-size: 1.15rem;
+
+      &:hover {
+        background-color: rgb(13, 125, 41);
+      }
+    }
+
+    img {
+      height: 50px;
+      width: auto;
+      margin: 0.35rem 0.35rem 0 0;
+    }
+  }
+}
