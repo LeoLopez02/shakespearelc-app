@@ -1,0 +1,18 @@
+::ng-deep {
+  footer {
+    background-color: #198754;
+    width: 100%;
+    height: fit-content;
+    // position: absolute;
+    // bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+
+    li {
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}

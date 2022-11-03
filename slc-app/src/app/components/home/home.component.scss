@@ -1,0 +1,60 @@
+.jumbotron {
+  background-color: #edfbf4;
+  border-radius: 0.75rem;
+  margin: 1rem;
+  padding: 1rem;
+
+  p {
+    text-align: center;
+    a {
+      text-align: center;
+    }
+  }
+
+  .display-4 {
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    padding: 3rem;
+  }
+
+  .coming-soon {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .coming-soon img {
+    width: 600px;
+    height: 50vh;
+    border-radius: 10px;
+    margin: 2rem;
+  }
+
+  .countdown {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 3rem;
+  }
+}
