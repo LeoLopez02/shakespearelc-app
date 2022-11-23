@@ -1,71 +1,255 @@
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-  <h1 class="display-4">Pricing</h1>
-  <p class="lead">
-    Quickly build an effective pricing table for your potential customers with
-    this Bootstrap example. It's built with default Bootstrap components and
-    utilities with little customization.
-  </p>
+<div class="container pd">
+  <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">Pricing plans</h1>
+    <p class="lead">
+      Our English Institute offer a single payment method and two discount
+      options to encourage learning accompanied by a family member, friend,
+      clasemate or coworker. You may see the options we have in each of the
+      cards shown below, however certain restrictions may apply to some of these
+      options.
+    </p>
+  </div>
 
   <div class="container">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
+    <div class="v-center">
+      <div class="row">
+        <div class="col-12 col-md-4 pd">
+          <div class="g-card">
+            <div class="card-container">
+              <div class="card-front">
+                <div class="card">
+                  <h5 class="card-header">Individual</h5>
+                  <div class="card-body">
+                    <h1 class="card-title">
+                      RD$1,800 <small class="text-muted">/ level</small>
+                    </h1>
+                    <div class="card-text">
+                      <ul>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Make only one
+                          payment per level
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Choose start
+                          day from availability
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Placement test
+                          available in case of being required
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Level
+                          assessments on predefined dates
+                        </li>
+                        <li>
+                          <i class="bi bi-x-square-fill text-danger"></i
+                          >Enrollment fee
+                        </li>
+                        <li>
+                          <i class="bi bi-x-square-fill text-danger"></i>Study
+                          materials
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="d-grid">
+                      <a class="btn btn-md btn-block btn-primary-color"
+                        >Enroll now!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">
-            $0 <small class="text-muted">/ mo</small>
-          </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>10 users included</li>
-            <li>2 GB of storage</li>
-            <li>Email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button
-            type="button"
-            class="btn btn-lg btn-block btn-outline-primary"
-          >
-            Sign up for free
-          </button>
+
+        <div class="col-12 col-md-4 pd">
+          <div class="g-card" [class.rotate]="cardBack === false">
+            <div class="card-container">
+              <div class="card-front">
+                <div class="card">
+                  <h5 class="card-header">Family</h5>
+                  <div class="card-body">
+                    <h2 class="card-title">
+                      10% discount <small class="text-muted">/ level</small>
+                    </h2>
+                    <div class="card-text">
+                      <ul>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Apply to each
+                          family member enrolled
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Members must
+                          enrolled on the same day
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>The discount is
+                          valid when 2+ family members are enrolled.
+                        </li>
+                        <li>
+                          <i class="bi bi-x-square-fill text-danger"></i
+                          >Enrollment fee
+                        </li>
+                        <li>
+                          <i class="bi bi-x-square-fill text-danger"></i>Study
+                          materials
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                    <p class="restriction">Certain restrictions may apply</p>
+                    <div class="d-grid">
+                      <a
+                        class="btn btn-md btn-block btn-secondary"
+                        (click)="onClickFamily()"
+                        >See more...</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back">
+                <div
+                  class="card custom-height"
+                  [class.rotate]="cardBack === true"
+                >
+                  <h5 class="card-header">Family</h5>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <ul>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Members must
+                          have the same lastname (at least one).
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Members must
+                          live under the same house address. Siblings who reside
+                          in different location must comply with the previous
+                          term.
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Members must be
+                          enrolled while getting the discount. In case of a
+                          member leaving the course, the discount may not apply
+                          if not comply with the 2+ members enrolled.
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                    <p class="restriction">
+                      By selecting this plan, you agree with the family plan's
+                      terms and conditions.
+                    </p>
+                    <div class="d-grid">
+                      <a
+                        class="btn btn-md btn-block btn-primary-color"
+                        (click)="onClickFamily()"
+                        >Enroll now!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">
-            $15 <small class="text-muted">/ mo</small>
-          </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>20 users included</li>
-            <li>10 GB of storage</li>
-            <li>Priority email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">
-            Get started
-          </button>
-        </div>
-      </div>
-      <div class="card mb-4 box-shadow">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">
-            $29 <small class="text-muted">/ mo</small>
-          </h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>30 users included</li>
-            <li>15 GB of storage</li>
-            <li>Phone and email support</li>
-            <li>Help center access</li>
-          </ul>
-          <button type="button" class="btn btn-lg btn-block btn-primary">
-            Contact us
-          </button>
+
+        <div class="col-12 col-md-4 pd">
+          <div class="g-card" [class.rotate]="cardFront === false">
+            <div class="card-container">
+              <div class="card-front">
+                <div class="card">
+                  <h5 class="card-header">Referral</h5>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      Make your own discount
+                      <small class="text-muted">/ level</small>
+                    </h3>
+                    <ul>
+                      <h5><i class="bi bi-trophy-fill silver"></i>Silver</h5>
+
+                      <li>
+                        <i class="bi bi-people-fill"></i>Get 5% off for each
+                        friend referred (1-4)
+                      </li>
+                      <h5><i class="bi bi-trophy-fill silver gold"></i>Gold</h5>
+                      <li>
+                        <i class="bi bi-people-fill"></i>Get 10% off for each
+                        friend referred (5-9)
+                      </li>
+                      <h5>
+                        <i class="bi bi-trophy-fill silver diamond"></i>Diamond
+                      </h5>
+                      <li>
+                        <i class="bi bi-people-fill"></i>100% off when referring
+                        10+ friends
+                      </li>
+                    </ul>
+                    <hr />
+                    <p class="restriction">Certain restrictions may apply</p>
+                    <div class="d-grid gap-2">
+                      <a
+                        class="btn btn-md btn-block btn-secondary"
+                        (click)="onClickReferral()"
+                        >See more...</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back">
+                <div
+                  class="card custom-height"
+                  [class.rotate]="cardFront === true"
+                >
+                  <h5 class="card-header">Referral</h5>
+                  <div class="card-body">
+                    <div class="card-text">
+                      <ul>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Keep a 5%, 10%
+                          or 100% discount for each friend you refer while the
+                          status of each friend referred is active.
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>If you are in a
+                          Family plan the Referral plan is not applicable.
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>If you are
+                          already enrolled when referring a friend, the discount
+                          is applicable for the following level enrollment.
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>Referral plan
+                          is only applicable to the referrer and not the
+                          referred friends.
+                        </li>
+                        <li>
+                          <i class="bi bi-check-square-fill"></i>A referred
+                          friend/s is not limited to select the Family or
+                          Referred plan.
+                        </li>
+                      </ul>
+                    </div>
+                    <hr />
+                    <p class="restriction">
+                      By selecting this plan, you agree with the referral plan's
+                      terms and conditions.
+                    </p>
+                    <div class="d-grid">
+                      <a
+                        class="btn btn-md btn-block btn-primary-color"
+                        (click)="onClickReferral()"
+                        >Enroll now!</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

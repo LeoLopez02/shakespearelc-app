@@ -1,10 +1,9 @@
 ::ng-deep {
   footer {
-    background-color: #198754;
+    background-color: var(--bg-footer-color);
     width: 100%;
     height: fit-content;
-    // position: absolute;
-    // bottom: 0;
+    padding: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
 

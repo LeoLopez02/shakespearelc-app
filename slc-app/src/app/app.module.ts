@@ -15,6 +15,8 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { TeamComponent } from './components/team/team.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { AdsComponent } from './components/ads/ads.component';
+import { QuestionsComponent } from './components/questions/questions.component';
+import { CollapsibleWellComponent } from './common/collapsible-well.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,10 @@ import { AdsComponent } from './components/ads/ads.component';
     HomeComponent,
     FooterComponent,
     PricingComponent,
+    AdsComponent,
+    AboutusComponent,
+    QuestionsComponent,
+    CollapsibleWellComponent,
   ],
   imports: [
     RouterModule.forRoot([

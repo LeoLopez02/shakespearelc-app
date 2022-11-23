@@ -1,0 +1,57 @@
+<div class="questions-header bg-color">
+  <h1 class="display-4 text-center">Frequently asked questions - FAQ</h1>
+  <p class="lead">
+    In this section you can find the most frequently asked questions and
+    answers, if you cannot see a particular question you're welcome to contact
+    us
+    <span class="text-muted">(see contact information for more details)</span>
+  </p>
+  <div class="row">
+    <div class="col-12 qa-card">
+      <collapsible-well>
+        <div class="qa-question" well-title>
+          <div>
+            <i class="bi bi-question-octagon-fill"></i>
+            Why payment per level?
+          </div>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="qa-answer text-muted" well-body>
+          <hr />
+          To ensure that each of our students has an uninterrupted learning
+          experience, and to facilitate level assessments on previously
+          scheduled dates, the center employs a single payment method that
+          provides the following benefits:
+          <ol class="qa-answer-li text-muted list-style-decimal">
+            <li>
+              More time in class and less time waiting to complete payment every
+              month
+            </li>
+            <li>Periodic evaluations on previously established dates</li>
+            <li>Guaranteed three-month duration level</li>
+            <li>A teacher available for the entire duration of the level</li>
+            <li>Calendar with levels details available all year</li>
+          </ol>
+          <hr />
+        </div>
+      </collapsible-well>
+    </div>
+
+    <div class="col-12 qa-card" *ngFor="let question of questions">
+      <collapsible-well>
+        <div class="qa-question" well-title>
+          <div>
+            <i class="bi bi-question-octagon-fill"></i>
+            {{ question.question }}
+          </div>
+          <i class="bi bi-chevron-right"></i>
+        </div>
+        <div class="qa-answer text-muted" well-body>
+          <hr />
+          {{ question.answer }}
+          <hr />
+        </div>
+      </collapsible-well>
+    </div>
+  </div>
+</div>

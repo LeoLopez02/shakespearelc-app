@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+:root {
+  --bg-color: #f1f1f1;
+  --bg-primary-color: $color: #f1f1f1;
+  --bg-primary-alpha: $alpha: 0.6;
+  --bg-nav-color: rgb(12, 104, 35);
+  --bg-nav-hover-color: rgb(13, 125, 41);
+  --bg-footer-color: rgb(12, 104, 35);
+  --body-bg: hsla(229, 84%, 36%, 1);
+}
 
 *,
 *::before,
@@ -10,7 +21,7 @@
 }
 
 body {
-  background-color: hsla(229, 84%, 36%, 1);
+  background-color: var(--body-bg);
   background-image: radial-gradient(
       at 40% 20%,
       hsla(28, 100%, 74%, 1) 0px,
