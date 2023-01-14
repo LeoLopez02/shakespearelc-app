@@ -32,10 +32,11 @@ import { CollapsibleWellComponent } from './common/collapsible-well.component';
   ],
   imports: [
     RouterModule.forRoot([
-      { path: '', component: AdsComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
       { path: 'home', component: HomeComponent },
       { path: 'team', component: TeamComponent },
       { path: 'pricing', component: PricingComponent },
+      { path: 'faq', component: QuestionsComponent },
       { path: 'about-us', component: AboutusComponent },
     ]),
     FormsModule,

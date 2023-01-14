@@ -1,60 +1,19 @@
-.jumbotron {
-  background-color: rgba($color: #f1f1f1, $alpha: 0.6);
-  border-radius: 0.75rem;
-  margin: 1rem;
-  padding: 1rem;
+.container {
+  padding: 2.5rem;
 
-  p {
-    text-align: center;
-    a {
-      text-align: center;
-    }
+  &.bg-color {
+    background-color: var(--bg-color);
   }
 
-  .display-4 {
-    font-size: 2rem;
-    font-weight: 400;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  .lead {
+    font-size: x-large;
   }
 
-  .display-2 {
-    font-size: 3rem;
-    font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
+  h1 {
+    font-weight: bolder;
   }
 
-  h2 {
-    font-size: 5rem;
-    font-weight: bold;
-    padding: 3rem;
-  }
-
-  .coming-soon {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .coming-soon img {
-    width: 600px;
-    height: 50vh;
-    border-radius: 10px;
-    margin: 2rem;
-  }
-
-  .countdown {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  .day,
-  .hour,
-  .minute,
-  .second {
-    font-size: 3rem;
+  .btn {
+    font-size: larger;
   }
 }
